@@ -57,6 +57,8 @@ This is an internal http services where you have mentioned endpoints.
 #### ToDo
  - Middleware for RateLimiting.
  - Middleware for validations.
+ - Fix lint.
+ - 
 
 #### To Run the server and postgres
 - To build image of the server and run postgres. I have added a docker-compose file.

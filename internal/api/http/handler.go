@@ -47,7 +47,6 @@ func (h *Handler) CreateAccount(w http.ResponseWriter, r *http.Request) {
 		return nil
 	})
 
-	fmt.Println("account created")
 	w.WriteHeader(http.StatusCreated)
 }
 

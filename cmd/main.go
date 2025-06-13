@@ -3,10 +3,11 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"github.com/pradeepitm12/compaaa/internal-http/internal/pkg/logger"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/pradeepitm12/compaaa/internal-http/internal/pkg/logger"
 
 	_ "github.com/lib/pq"
 	internalhttp "github.com/pradeepitm12/compaaa/internal-http/internal/api/http"

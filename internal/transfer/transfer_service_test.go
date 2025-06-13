@@ -3,12 +3,13 @@ package transfer
 import (
 	"context"
 	"database/sql"
-	"github.com/pradeepitm12/compaaa/internal-http/internal/pkg/logger"
 	"log"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/pradeepitm12/compaaa/internal-http/internal/pkg/logger"
 
 	"github.com/pradeepitm12/compaaa/internal-http/internal/db"
 	"github.com/pradeepitm12/compaaa/internal-http/internal/domain/model"
