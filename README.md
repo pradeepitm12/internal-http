@@ -12,7 +12,7 @@ This is an internal http services where you have mentioned endpoints.
   ```
 
 - **GET : /accounts/{account_id}**
-  - this get request gives you balance of acccount for a given account it
+  - this get request gives you balance of account for a given account it
      ```azure
      curl http://localhost:8080/accounts/1                                                                                                                 
      {"account_id":1,"balance":"500"}
@@ -29,7 +29,7 @@ This is an internal http services where you have mentioned endpoints.
     ```
 
 - **POST : /deposit**
-  - this endpoint helps you to deposite amount to an account
+  - this endpoint helps you to deposit amount to an account
   - with response of account id and balance
   
     ```azure
@@ -39,8 +39,8 @@ This is an internal http services where you have mentioned endpoints.
       {"account_id":2,"balance":"650"}
       ```
 - **POST : /withdraw**
-  - this endoint helps you to withdraw amount from an account
-  - with resposne of account and amount
+  - this endpoint helps you to withdraw amount from an account
+  - with response of account and amount
     
     ```azure
     curl -X POST http://localhost:8080/withdraw \
@@ -49,8 +49,8 @@ This is an internal http services where you have mentioned endpoints.
       ```
 
 
-#### Assumpstion: 
-- I have assumed that accout will be an integer always. within limit of go int.
+#### Assumption: 
+- I have assumed that account will be an integer always. within limit of go int.
 - Used row locks `SELECT ... FOR UPDATE` to avoid any race condition.
 
 
@@ -73,7 +73,7 @@ This is an internal http services where you have mentioned endpoints.
     ```
 
 - You can run unit test in transfer/transfer_service_test.go
-  - This tried to mimik concurrent transfers and check atomicity. 
+  - This tried to mimic concurrent transfers and check atomicity. 
     ```azure
     docker-compose up --build
     cd internal-http
